@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 30%;
+            background-color: rgb(0, 0, 0);
+            margin:100px 40% 0px 35%;
+        }
+        h1{
+            color: darkblue;
+        }
+        .row{
+            background-color: rgb(61, 61, 61);
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3px 0px;
+            font-size: 22px;
+            justify-content: space-between;
+            height:30px;
+            color: white;
+            padding: 4px;
+
+        }
+        input{
+            width: 100%;
+        }
+        
+        .btn-gen{
+            background-color: rgb(19, 137, 246);
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            color: white;
+        }
+        .btn-gen:hover{
+            background-color:rgb(13, 111, 202) ;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h1>RANDOM PASSWORD GENERATOR</h1></center>
+    <div class="container">
+        <div class="row">
+            <input type="" placeholder="password" id="password-show">
+        </div>
+        <div class="row">
+            <input type="number" id="total-char" max="20" min="2" placeholder="password length 2-20">
+        </div>
+        <div class="row">
+            <div class="left">Uppercase</div>
+            <div class="right">
+                <input type="checkbox" id="upper-case">
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">Lowercase</div>
+            <div class="right">
+                <input type="checkbox" id="lower-case">
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">Number</div>
+            <div class="right">
+                <input type="checkbox" id="numbers">
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">Symbol</div>
+            <div class="right">
+                <input type="checkbox" id="symbols">
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn-gen" onclick="generatepassword()">generate</button>
+        </div>
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+    
+</body>
+</html>
